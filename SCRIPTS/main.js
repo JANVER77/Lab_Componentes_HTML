@@ -1,31 +1,27 @@
 let tVotos = 0;
-let vLinkedin = 1;
+let vLinkedin = 0;
 let vInstagram = 0;
 let vTiktok = 0;
-
 
 function votosLinkedin(){
     vLinkedin++
     document.getElementById("votos-linkedin").textContent = vLinkedin;
-    tVotos += vLinkedin;
-    totalVotos(tVotos);
+    totalVotos();
 }
 
 function votosInstagram(){
     vInstagram++
     document.getElementById("votos-instagram").textContent = vInstagram;
-    tVotos += vInstagram;
-    totalVotos(tVotos);
+    totalVotos();
 }
 
 function votosTiktok(){
     vTiktok++
     document.getElementById("votos-tiktok").textContent = vTiktok;
-    tVotos += vTiktok;
-    totalVotos(tVotos);
+    totalVotos();
 }
 
 function totalVotos(t){
-
-document.getElementById("total-votos").value = t;
+    tVotos++;
+    document.getElementById("conteo-votos").textContent = tVotos;
 }

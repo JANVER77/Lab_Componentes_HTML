@@ -4,20 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="style-sheet" src="STYLES/main.css">
+    <link rel="stylesheet" href="STYLES/main.css">
     <title>Encuesta</title>
 </head>
 <body>
-    <h1 class="tittle">Que opcion prefieres</h1>
+    <h1 class="tittle">¿Que red social usas mas?</h1>
+    <main class="main">
+        <section class="votos-redes">
+            <div class="linkedin-container">
+                <span class="red-voto" id="votos-linkedin">0</span>
+                <p class="red-name" onclick="votosLinkedin()" class="opcion">LinkedIn</p>
+            </div>
 
-    <p>votos <span id="votos-linkedin">0</span></p>
-    <p>votos <span id="votos-instagram">0</span></p>
-    <p>votos <span id="votos-tiktok">0</span></p> 
+            <div class = "instagram-container">
+                <span class="red-voto" id="votos-instagram">0</span>
+                <p class="red-name" onclick="votosInstagram()" class="opcion">Instagram</p>
+            </div>
 
-    <p onclick="votosLinkedin()" class="opcion">LinkedIn</p>
-    <p onclick="votosInstagram()" class="opcion">Instagram</p>
-    <p onclick="votosTiktok()" class="opcion">TikTok</p>
-    <h2 id="total-votos">0</h2>
+            <div class = "tiktok-container">
+                <span class="red-voto" id="votos-tiktok">0</span>
+                <p class="red-name" onclick="votosTiktok()" class="opcion">TikTok</p>
+            </div>    
+        </section><section class="total-votos">
+            <div class = "tVotos-container">
+                <h2>Total Votos</h2>
+                <span id="conteo-votos">0</span>
+            </div>
+        </section>
+    </main>
     <script src="SCRIPTS/main.js"></script>
 </body>
 </html>

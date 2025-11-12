@@ -1,2 +1,80 @@
+body {
+    background-color: #CCC;
+}
 
- 
+h2 {
+    margin: 0;
+}
+
+.main {
+    margin: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.tittle {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.votos-redes {
+    display: inline-block;
+    margin-left: auto;
+    width: 60%;
+    text-align: center;
+}
+.total-votos {
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+}
+
+.linkedin-container {
+    display: inline-block;
+    width: 25%;
+    border: solid #33C;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px ;
+    margin: 0;
+}
+.linkedin-container:hover {
+    background-color: #77F;
+}
+
+.instagram-container {
+    display: inline-block;
+    width: 25%;
+    border: solid #C09;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px ;
+    margin: 0;
+}
+
+.instagram-container:hover{
+    background-color: #F9E;
+}
+.tiktok-container {
+    display: inline-block;
+    width: 25%;
+    border: solid #C90;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px ;
+    margin: 0;
+}
+.tiktok-container:hover {
+    background-color: #DA9;
+}
+
+.tVotos-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: solid #922;
+    border-radius: 10px;
+    border-style: inset;
+    box-shadow: 1px 2px 1px rgba(0,0,0,0.3);
+    width: 30%;
+    margin: 0 auto;
+}
+
